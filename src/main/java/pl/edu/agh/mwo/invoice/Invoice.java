@@ -7,8 +7,8 @@ import pl.edu.agh.mwo.invoice.product.Product;
 public class Invoice {
 	public void addProduct(Product product) {
 		// TODO: implement
-	}
-
+	}	
+	
 	public void addProduct(Product product, Integer quantity) {
 		// TODO: implement
 	}
