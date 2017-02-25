@@ -144,10 +144,10 @@ public class InvoiceTest {
 	public void testPrintedPrice()
 	{
 		Invoice invoice= createEmptyInvoice();
-		Product product= new DairyProduct ("maslo", new BigDecimal("50"));
+		Product product= new DairyProduct ("maslo", new BigDecimal("60"));
 		invoice.addProduct(product, 60);
 		String printed = invoice.printedVersion();
-		Assert.assertThat(printed, Matchers.containsString("50"));
+		Assert.assertThat(printed, Matchers.containsString("60"));
 	}
 	
 	
