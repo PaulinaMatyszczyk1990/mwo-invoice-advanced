@@ -134,7 +134,7 @@ public class InvoiceTest {
 	public void testPrintedProductName()
 	{
 		Invoice invoice= createEmptyInvoice();
-		Product product= new DairyProduct ("DairyProduct", new BigDecimal("50"));
+		Product product= new DairyProduct ("DairyProduct", new BigDecimal("70"));
 		invoice.addProduct(product);
 		String printed = invoice.printedVersion();
 		Assert.assertThat(printed, Matchers.containsString("DairyProduct"));
